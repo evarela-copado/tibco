@@ -4,6 +4,6 @@ private class AccountOperationsTest {
         Account acc = new Account(Name = 'My Test Account',Description='Default description');
         insert acc;
         acc = AccountOperations.setDefaultDescription(acc);
-        System.assertEquals('Custom description', acc.Description, 'Msg');
+        System.assertEquals('Default description', acc.Description , 'msg');
     }
 }
